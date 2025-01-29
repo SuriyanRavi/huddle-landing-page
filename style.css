@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,h2,button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+p,a,li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal; 
+}
+
+#header{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  hsl(193, 100%, 96%);
+}
+#header .head{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:50px 50px 0px 50px;
+}
+nav button{
+    padding: 5px;
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    color: #0f0f0f;
+    border: none;
+    box-shadow: 0px 0px 2px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.content{
+    display: flex;
+    justify-content:space-evenly;
+    /* align-items: center; */
+    /* padding:50px 50px 0px 50px; */
+    padding: 10px 30px;
+}
+.part1{
+    margin-top: 100px;
+    padding: 0px;
+}
+.part1 h1{
+ font-size: 30px;
+ width: 350px;
+ padding-bottom: 20px;
+}
+.part1 p{
+    width: 400px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.content img{
+    width:800px;
+    height: 100%;
+}
+.part1 button{
+    width: 190px;
+    padding: 5px;
+    height: 40px;
+    background-color:hsl(322, 100%, 66%);
+    color:white;
+    border: none;
+    border-radius: 40px;
+    font-weight: 550;
+}
+.part1 button:hover{
+    background-color:hsl(322, 91%, 74%) ;
+}
+.info{
+    padding:50px 80px 0px 80px;
+    margin: 20px 0px;
+}
+.info .feature{
+    padding: 30px;
+    box-shadow:0px 0px 1px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.info .feature img{
+    width: 350px;
+    height:100%;
+}
+.info .feature p{
+    width:400px;
+    padding: 20px 0px;
+} 
+.calltoaction{
+    margin-top: 80px;
+    position: relative;
+    top: 50px;
+    /* left: 520px; */
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calltoaction .call{
+    padding: 30px;
+    width:500px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items:center; 
+
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0.9px;
+}
+.calltoaction .call button{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 12px;
+    background-color:hsl(322, 100%, 66%) ;
+    color:#fff ;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+}
+.calltoaction .call button:hover{
+    background-color:hsl(322, 91%, 74%) ;
+}
+footer #png{
+    filter: brightness(0) invert(1);
+}
+footer{
+    padding:100px 0px;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index:1;
+}
+footer .foot-info{
+    display:flex;
+    flex-direction: column;
+
+}
+footer .foot-info a{
+    color: #fff;
+    text-decoration: none;
+    width: 300px;
+    margin-top: 20px;   
+}
+footer .foot-info a img{
+    position: relative;
+    top: 4px;
+    left: 0px;
+    padding-right: 15px;
+}
+
+footer .action ul{
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.action ul li{
+    margin-bottom: 10px;
+} 
+footer .action li:hover{
+    color: rgb(255, 255, 255);  
+    text-decoration: underline;
+    transition:0.5ms;
+}
+footer .icon a i{
+  margin-right: 10px;
+}
+footer .icon .fa-brands:hover{
+    color: hsl(322, 100%, 66%);
+}
+footer .icon p{
+    margin-top: 50px;
+    color: #fff;
+}
+@media screen and (max-width:400px) {
+    #header .head{
+        display:flex;
+        padding:20px 20px;
+    }
+    #header .head a img{
+         width: 100px;
+    }
+    nav button{
+        padding: 5px;
+        width: 120px;
+        height: 30px;
+    }
+    .content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .part1 h1{
+        font-size: 30px;
+        /* width: 250px; */
+        padding-bottom: 20px;
+       }
+       .part1 p{
+        width: 330px;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+       .content img{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+
+    /* Grow Section */
+    .info{
+        padding:50px 25px 0px 25px;
+        margin: 20px 0px;
+    }
+    .info .feature{
+        text-align: center;
+        padding: 30px;
+        box-shadow:0px 0px 1px;
+        display: block;
+        margin-top: 35px;
+    }
+    .info .feature img{
+        width: 100%;
+    }
+    .info .feature .flow{
+        margin-bottom: 20px;
+    }
+    .feature .con1{
+        font-size: 12px;
+    }
+    .info .feature p{
+        width: 100%;
+        font-size: 12px;
+        padding: 20px 0px;
+    } 
+    /* Calltoaction */
+    .calltoaction .call{
+        width:350px;
+    }
+    .calltoaction .call h2{
+        font-size: 17px;
+    }
+    .calltoaction .call{
+        text-align: center;
+    }
+    /* Footer */
+    footer{
+        display: block;
+        padding-left: 20px;
+    }
+    footer .action{
+        margin:20px 0px ;
+    }
+    footer .icon{
+        margin-top: 50px ;
+        text-align: center;
+    }
+    footer .icon p{
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
